@@ -1,0 +1,54 @@
+ol li:nth-child(odd) {
+	background-color: yellow;
+	text-transform: uppercase;
+}
+
+ol li:nth-child(even) {
+	background-color: yellow;
+	color: green;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: red;
+}
+
+h1 em, h2 em {
+	font-size: 40px;
+	border: 1px solid black;
+}
+
+li {
+	font-size: 20px;
+}
+
+li em {
+	font-weight: bold;
+}
+
+#programacao li:not(:nth-child(n + 4)) {
+	color: blue;
+}
+
+#aliados li a:hover {
+	font-weight: bold;
+}
+
+#aliados li a:hover[href*="stackoverflow"] {
+	color: orange;
+}
+
+#aliados li a:hover[href*="w3schools"] {
+	color: green;
+}
+
+#aliados li a:hover[href*="mozilla"] {
+	color: black;
+}
+
+#aliados li a:hover[href*="devdocs"] {
+	color: yellow;
+}
+
+#aliados li a:hover[href*="trybe"] {
+	color: green;
+}
