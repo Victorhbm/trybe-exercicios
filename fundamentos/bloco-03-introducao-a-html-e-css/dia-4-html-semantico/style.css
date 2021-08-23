@@ -1,7 +1,79 @@
+/* Gerais */
+
 * {
-	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.stomatopoda-olhos {
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #EDF1FA;
+}
+
+h1, h2, h3 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #1C7FA6;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
 	width: 300px;
 }
+
+cite {
+	display: block;
+}
+
+/* Header */
+
+.header {
+	background: #024059;
+	color: #EDF1FA;
+	padding: 10px;
+}
+
+.header a {
+	color: #EDF1FA;
+}
+
+.header ul {
+	margin-left: 10px;
+}
+
+.header li {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.header-title {
+	font-size: 16px;
+	margin: 10px 15px;
+}
+
+/* article */
+
+.article {
+	margin: 10px 10px;
+	max-width: 560px;
+	background: #A7D5F2;
+	padding: 15px;
+}
+
+.article-title {
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+
