@@ -62,16 +62,27 @@
 
 // 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
 
-function verificaMaior (numbers) {
-	let maiorNumero = 0;
-	let indice = 0;
+// function verificaMaior (numbers) {
+// 	let maiorNumero = 0;
+// 	let indice = 0;
+// 	for (let index = 0; index < numbers.length; index += 1) {
+// 		if (numbers[index] > maiorNumero) {
+// 			maiorNumero = numbers[index];
+// 			indice = index
+// 		}
+// 	}
+// 	return indice
+// }
+
+// 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+function verificaMenor (numbers) {
+	let menorIndice = 0;
 	for (let index = 0; index < numbers.length; index += 1) {
-		if (numbers[index] > maiorNumero) {
-			maiorNumero = numbers[index];
-			indice = index
+		if (numbers[index] < numbers[menorIndice]) {
+			menorIndice = index
 		}
 	}
-	return indice
+	return menorIndice
 }
-
 
