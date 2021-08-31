@@ -48,14 +48,30 @@
 
 // 1 - Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
 
-function verificaPalindromo (palavra) {
-	let reverse = palavra.split('').reverse().join('');
-	if (reverse == palavra) {
-		return true
-	} else {
-		return false
+// function verificaPalindromo (palavra) {
+// 	let reverse = palavra.split('').reverse().join('');
+// 	if (reverse == palavra) {
+// 		return true
+// 	} else {
+// 		return false
+// 	}
+// }
+
+// console.log(verificaPalindromo('arara'));
+// console.log(verificaPalindromo('desenvolvimento'));
+
+// 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+
+function verificaMaior (numbers) {
+	let maiorNumero = 0;
+	let indice = 0;
+	for (let index = 0; index < numbers.length; index += 1) {
+		if (numbers[index] > maiorNumero) {
+			maiorNumero = numbers[index];
+			indice = index
+		}
 	}
+	return indice
 }
 
-console.log(verificaPalindromo('arara'));
-console.log(verificaPalindromo('desenvolvimento'));
+
