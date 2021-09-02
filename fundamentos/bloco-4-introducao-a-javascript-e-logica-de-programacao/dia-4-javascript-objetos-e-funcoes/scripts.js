@@ -100,3 +100,6 @@ function maiorCaracter (nomes) {
 }
 
 console.log(maiorCaracter (['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+// 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+
