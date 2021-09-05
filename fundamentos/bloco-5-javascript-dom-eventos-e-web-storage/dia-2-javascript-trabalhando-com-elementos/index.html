@@ -57,23 +57,37 @@
   </head>
   <body>
     <script>
-      // Exercicio 5.2
+    	// Exercicio 5.2
 
-			// Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+			// 1 - Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
 			let adicionaH1 = document.createElement('h1');
 			document.getElementsByTagName('body')[0].appendChild(adicionaH1);
 			adicionaH1.innerText = 'Exercício 5.2 - JavaScript DOM';
 
-			// Adicione a tag main com a classe main-content como filho da tag body ;
+			// 2 - Adicione a tag main com a classe main-content como filho da tag body ;
 			let adicionaMain = document.createElement('main');
 			document.getElementsByTagName('body')[0].appendChild(adicionaMain);
 			adicionaMain.className = 'main-content';
 
-			// Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+			// 3 - Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
 			let adicionaSection = document.createElement('section');
 			document.querySelector('.main-content').appendChild(adicionaSection);
 			adicionaSection.className = 'center-content';
 
+			// 4 - Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+			let addParagraph = document.createElement('p');
+			document.querySelector('.center-content').appendChild(addParagraph);
+			addParagraph.innerText = 'Lorem ipsum dolor sit amet. Qui nisi maiores id labore modi quo accusamus dolorem aut voluptas omnis.'
+
+			// 5 - Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+			let addNewSection = document.createElement('section');
+			document.querySelector('.main-content').appendChild(addNewSection);
+			addNewSection.className = 'left-content';
+
+			// 6 - Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+			let addAnotherSection = document.createElement('section');
+			document.getElementsByClassName('main-content')[0].appendChild(addAnotherSection);
+			addAnotherSection.className = 'right-content';
     </script>
   </body>
 </html>
