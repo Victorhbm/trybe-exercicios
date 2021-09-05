@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Para fixar - 01</title>
+</head>
+<body>
+	<main id="paiDoPai">
+		<section id="pai">
+			<section id="primeiroFilho"></section>
+			<section id="elementoOndeVoceEsta">
+				<section id="primeiroFilhoDoFilho"></section>
+				<section id="segundoEUltimoFilhoDoFilho"></section>
+			</section>
+			Atenção!
+			<section id="terceiroFilho"></section>
+			<section id="quartoEUltimoFilho"></section>
+		</section>
+	</main>
+	<script>
+		let newBrother = document.createElement('section')
+		document.getElementById('pai').appendChild(newBrother);
+		newBrother.id = 'quintoEUltimoFilho';
+
+		function makeNewChild (tag) {
+			let newChild = document.createElement(tag)
+			document.getElementById('elementoOndeVoceEsta').appendChild(newChild);
+		} makeNewChild ('section');
+
+		let newChildChild = document.createElement('section');
+		document.getElementById('primeiroFilhoDoFilho').appendChild(newChildChild);
+
+		console.log (document.querySelector('#primeiroFilhoDoFilho section').parentElement.parentElement.parentElement.lastElementChild.previousElementSibling.previousElementSibling);
+
+		let paizao = document.getElementById('pai');
+		paizao.removeChild(primeiroFilho);
+		paizao.removeChild(terceiroFilho);
+		paizao.removeChild(quartoEUltimoFilho);
+		paizao.removeChild(quintoEUltimoFilho);
+
+		let filhao = document.getElementById('elementoOndeVoceEsta');
+		filhao.removeChild(segundoEUltimoFilhoDoFilho);
+		filhao.removeChild(terceiroFilho);
+	</script>
+</body>
+</html>
