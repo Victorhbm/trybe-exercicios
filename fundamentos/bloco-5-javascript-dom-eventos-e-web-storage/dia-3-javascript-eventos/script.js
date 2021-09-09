@@ -100,3 +100,15 @@ function addTask (task) {
 	spanElement.innerHTML = task;
 	taskContainer.appendChild(spanElement);
 }
+addTask ('Dormir');
+
+// Exercicio 8
+function addColorLegend (color) {
+	let taskContainer = document.querySelector('.my-tasks');
+	let createDiv = document.createElement('div');
+	createDiv.className = 'task';
+	createDiv.style.backgroundColor = color;
+	taskContainer.appendChild(createDiv);
+}
+addColorLegend ('blue')
+
