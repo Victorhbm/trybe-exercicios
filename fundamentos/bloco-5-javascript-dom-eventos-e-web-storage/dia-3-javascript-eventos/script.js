@@ -78,3 +78,16 @@ for (let index = 0; index < friday.length; index += 1) {
 		}
 	})
 }
+
+// Exercicio 6
+const dayContainer = document.querySelector('#days');
+
+dayContainer.addEventListener('mouseover', zoomUp)
+function zoomUp (event) {
+	event.target.style.fontSize = '25px';
+	event.target.style.cursor = 'pointer';
+}
+dayContainer.addEventListener('mouseout', zoomDown)
+function zoomDown (event) {
+	event.target.style.fontSize = '20px';
+}
