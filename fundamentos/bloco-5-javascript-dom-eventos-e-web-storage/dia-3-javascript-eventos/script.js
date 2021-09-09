@@ -65,3 +65,16 @@ function makeFridayButton (friday) {
 	document.querySelector('.buttons-container').appendChild(button2);
 }
 makeFridayButton ('Sexta-feira');
+
+// Exercicio 5
+fridayButton = document.getElementById('btn-friday');
+friday = document.querySelectorAll('.friday');
+for (let index = 0; index < friday.length; index += 1) {
+	fridayButton.addEventListener('click', function(){
+		if (friday[index].style.backgroundColor === 'blue') {
+			friday[index].style.backgroundColor = 'rgb(238,238,238)';
+		} else {
+			friday[index].style.backgroundColor = 'blue';
+		}
+	})
+}
