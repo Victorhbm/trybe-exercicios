@@ -91,3 +91,12 @@ dayContainer.addEventListener('mouseout', zoomDown)
 function zoomDown (event) {
 	event.target.style.fontSize = '20px';
 }
+
+// Exercicio 7
+function addTask (task) {
+	let taskContainer = document.querySelector('.my-tasks')
+	let spanElement = document.createElement('span');
+
+	spanElement.innerHTML = task;
+	taskContainer.appendChild(spanElement);
+}
