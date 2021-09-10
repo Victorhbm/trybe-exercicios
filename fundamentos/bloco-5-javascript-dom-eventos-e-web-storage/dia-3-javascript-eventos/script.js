@@ -111,4 +111,3 @@ function addColorLegend (color) {
 	taskContainer.appendChild(createDiv);
 }
 addColorLegend ('blue')
-
