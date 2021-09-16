@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Formulário de Currículo</title>
 </head>
 <body>
@@ -39,20 +40,59 @@
 
       <div> <!-- Fazer amanhã, adicionar options via JS -->
         <label for="select-estado">Estado:</label>
-        <select name="estado" id="select-estado" required></select>
+        <select name="estado" id="select-estado" required>
+          
+        </select>
       </div>
 
       <div>
-        <p>Tipo:</p>
-        <input type="radio" id="input-casa" value="casa" name="tipo" required>
-        <label for="input-casa">Casa</label>
-        <input type="radio" id="input-ap" value="apartamento" name="tipo" required>
-        <label for="input-tipo">Apartamento</label>
-        <input type="radio" id="input-outro" value="outro" name="tipo" required>
-        <label for="input-tipo">Outro</label>
+        <span>Tipo:</span>
+        <label for="input-casa">
+          <input type="radio" id="input-casa" value="casa" name="tipo" required>
+          Casa
+        </label>
+        <label for="input-ap">
+          <input type="radio" id="input-ap" value="apartamento" name="tipo" required>
+          Apartamento
+        </label>
+        <label for="input-outro">
+          <input type="radio" id="input-outro" value="outro" name="tipo" required>
+          Outro
+        </label>
       </div>
     </fieldset>
-    <button type="submit">Enviar</button>
+
+    <fieldset>
+      <div>
+        <label for="curriculo-resumo">
+          Resumo do Currículo:<br>
+          <textarea name="" id="curriculo-resumo" name="resumo" cols="30" rows="5" maxlength="1000" required></textarea>
+        </label>
+      </div>
+
+      <div>
+        <label for="input-cargo">
+          Cargo:<br>
+          <input type="text" id="input-cargo" name="cargo" required maxlength="40">
+        </label>
+      </div>
+
+      <div>
+        <label for="input-cargo-descricao">
+          Descrição do Cargo:<br>
+          <input type="text" id="input-cargo-descricao" name="cargo-descricao" required maxlength="500">
+        </label>
+      </div>
+
+      <div>
+        <label for="input-data">
+          Data de Início:<br>
+          <input type="date" name="data" id="input-data" required>
+        </label>
+      </div>
+    </fieldset>
+    <button type="submit" id="submit">Enviar</button>
   </form>
+  <script src="script.js"></script>
 </body>
 </html>
