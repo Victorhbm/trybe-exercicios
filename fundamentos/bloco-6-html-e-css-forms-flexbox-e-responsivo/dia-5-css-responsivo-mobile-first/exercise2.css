@@ -17,13 +17,13 @@ aside {
 }
 
 /* Mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 460px) {
   body {
     padding: 0px 15px;
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   h2, h3 {
@@ -45,7 +45,7 @@ aside {
 }
 
 /* Desktop */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 460px) and (max-width: 768px) {
   body {
     padding: 40px;
   }
