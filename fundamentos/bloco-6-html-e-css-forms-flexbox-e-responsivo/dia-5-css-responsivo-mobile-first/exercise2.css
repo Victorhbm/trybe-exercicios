@@ -8,6 +8,15 @@ html {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
 aside {
   margin-bottom: 30px;
 }
@@ -23,7 +32,7 @@ aside {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   h2, h3 {
@@ -47,6 +56,33 @@ aside {
 /* Desktop */
 @media screen and (min-width: 460px) and (max-width: 768px) {
   body {
-    padding: 40px;
+    padding: 20px;
+  }
+
+  header {
+    margin-bottom: 30px;
+  }
+
+  header ul {
+    max-width: 180px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2, h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  li {
+    font-size: 20px;
   }
 }
