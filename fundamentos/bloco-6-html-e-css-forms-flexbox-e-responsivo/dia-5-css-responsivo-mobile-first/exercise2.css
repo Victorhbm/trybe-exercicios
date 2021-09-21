@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0px 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2, h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  li {
+    font-size: 18px;
+  }
+
+  header nav {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 600px) {
+  body {
+    padding: 40px;
+  }
+}
