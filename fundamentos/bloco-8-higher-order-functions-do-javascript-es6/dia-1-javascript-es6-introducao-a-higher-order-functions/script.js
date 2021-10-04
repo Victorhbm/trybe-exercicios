@@ -36,3 +36,29 @@ function sorteio(aposta, func) {
 
 console.log(sorteio(4, confereResultado));
 
+// Exercício 3
+function checkGabarito(gabarito, respostas) {
+  let result = 0;
+
+  for (let i = 0; i < gabarito.length; i += 1) {
+    if (gabarito[i] === respostas[i]) {
+      result += 1;
+    } else if (respostas[i] === 'N.A') {
+      result += 0;
+    } else {
+      result -= 0.5;
+    }
+  }
+
+  return result;
+}
+
+const resultadoDaProva = (gabarito, respostas, func) => {
+  return func(gabarito, respostas);
+}
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+console.log(resultadoDaProva(RIGHT_ANSWERS, STUDENT_ANSWERS, checkGabarito));
+
