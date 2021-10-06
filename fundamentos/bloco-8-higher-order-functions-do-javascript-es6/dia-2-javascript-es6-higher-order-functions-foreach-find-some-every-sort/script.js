@@ -183,3 +183,14 @@ function someBookWasReleaseOnThe80s() {
 //console.log(someBookWasReleaseOnThe80s());
 
 assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult4);
+
+// Exercício 7
+const expectedResult5 = false;
+
+function authorUnique() {
+  return books.every((book) => !book.author.birthYear);
+}
+
+//console.log(authorUnique());
+
+assert.strictEqual(authorUnique(), expectedResult5);
