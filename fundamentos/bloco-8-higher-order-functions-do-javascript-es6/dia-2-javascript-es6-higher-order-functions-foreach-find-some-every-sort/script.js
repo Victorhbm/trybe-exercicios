@@ -161,3 +161,14 @@ function booksOrderedByReleaseYearDesc() {
 //console.log(booksOrderedByReleaseYearDesc());
 
 assert.deepStrictEqual(booksOrderedByReleaseYearDesc(), expectedResult2);
+
+// Exercício 5
+const expectedResult3 = false;
+
+function everyoneWasBornOnSecXX() {
+  return books.every((book) => book.author.birthYear > 1900);
+}
+
+//console.log(everyoneWasBornOnSecXX());
+
+assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult3);
