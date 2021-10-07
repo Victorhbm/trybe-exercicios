@@ -6,5 +6,17 @@ const names = [
 ];
 
 function containsA() {
-  // escreva seu código aqui
+  const justOneArray = names.reduce((acc, currentValue) => {
+    return acc + currentValue.split(',');
+  }, '');
+
+  const newArray = justOneArray.split('');
+  return newArray.reduce((acc, currentValue) => {
+    if (currentValue === 'a' || currentValue === 'A') {
+      return acc + 1
+    }
+    return acc;
+  }, 0)
 }
+
+console.log(containsA());
