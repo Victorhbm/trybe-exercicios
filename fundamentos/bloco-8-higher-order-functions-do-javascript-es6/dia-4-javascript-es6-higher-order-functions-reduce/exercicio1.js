@@ -6,5 +6,7 @@ const arrays = [
 ];
 
 function flatten() {
-  // escreva seu código aqui
+  return arrays.reduce((acc, currentValue) => acc.concat(currentValue));
 }
+
+//console.log(flatten());
