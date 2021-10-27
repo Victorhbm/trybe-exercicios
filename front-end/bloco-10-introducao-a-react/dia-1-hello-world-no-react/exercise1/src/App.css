@@ -1,0 +1,13 @@
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: beige;
+  padding: 1px 10px;
+  margin-bottom: 10px;
+  width: 400px;
+  border-radius: 10px;
+}
