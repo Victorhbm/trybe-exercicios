@@ -1,4 +1,5 @@
 import React from 'react';
+import Input from './components/Input';
 
 class Form extends React.Component {
   constructor() {
@@ -41,27 +42,9 @@ class Form extends React.Component {
             <option>React</option>
           </select>
 
-          <label for="nome">
-            Nome:
-            <input 
-              id="nome" 
-              name="nome" 
-              type="text" 
-              value={this.state.nome}
-              onChange={this.handleChange}
-            />
-          </label>
+          <Input name="nome" type="text" value={this.state.nome} onChange={this.handleChange}/>
 
-          <label for="idade">
-            idade:
-            <input 
-              id="idade" 
-              name="idade" 
-              type="number" 
-              value={this.state.idade}
-              onChange={this.handleChange}
-            />
-          </label>
+          <Input name="idade" type="number" value={this.state.idade} onChange={this.handleChange}/>
 
           <textarea 
             name="descricao" 
